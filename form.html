@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+<body>
+    <h1>Latihan Membuat Form</h1>
+    <form action="#" method="post">
+        <div> <!--Untuk memindahkan form kebagian bawan menjadi sebuah baris bisa mengunakan 
+            tag div , span, p -->
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" placeholder="Isikan Nama" id="nama"> <!--Placeholder berfungisi untuk membuat 
+        pentujuk atau memberikan informasi dalam inputan untuk diisi sesuai ketentuan form, 
+        id digunakan sebagain symantic elmen -->
+        </div>
+        <div>
+            <label for="email">e-mail</label>
+            <input type="email" placeholder="e-mail" id="email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" placeholder="password" id="password">
+        </div>
+        <div>
+            <label for="nomertelpon">Nomer Telpon</label>
+            <input type="number" placeholder="Nomer Telpon" id="nomertelpon">
+        </div>
+        <div>
+            <button>Kirim</button>
+            <button type="button">Jangan Kirim</button>
+            <button type="submit">Coba</button>
+            <input type="button" value="Daftar">
+        </div>
+    </form>
+    <hr>
+    <h1>Latihan Radio Buton dan kawan kawan</h1>
+    <form action="/submit">
+    <div>
+        <label for="">Jenis Kelamin</label>
+        <input type="radio" name="jeniskelamin" id="lakilaki" value="lakilaki" checked> <label for="lakilaki">Laki-Laki</label>
+        <input type="radio" name="jeniskelamin" id="perempuan" value="perempuan"> <label for="perempuan">Perempuan</label>
+    </div>
+    <div>
+        <label for="agama">Agama</label>
+        <select name="Agama" id="Agama">
+            <option value="islam">Islam</option>
+            <option value="kristen">Kristen</option>
+            <option value="katolik">Katolik</option>
+            <option value="budha">Budha</option>
+            <option value="hindu">Hindu</option>
+        </select>
+    </div>
+    <button type="submit">Kirim</button>
+    </form>
+
+</body>
+</html>
