@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Latihan Membuat Form</h1>
-    <form action="#" method="post">
+    <form action="/kirim" method="get">
         <div> <!--Untuk memindahkan form kebagian bawan menjadi sebuah baris bisa mengunakan 
             tag div , span, p -->
             <label for="nama">Nama Lengkap</label>
@@ -28,10 +28,10 @@
             <input type="number" placeholder="Nomer Telpon" id="nomertelpon">
         </div>
         <div>
-            <button>Kirim</button>
-            <button type="button">Jangan Kirim</button>
-            <button type="submit">Coba</button>
-            <input type="button" value="Daftar">
+            <!-- <button>Kirim</button> -->
+            <!-- <button type="button">Jangan Kirim</button> -->
+            <button type="submit">Kirim</button>
+            <!-- <input type="button" value="Daftar"> -->
         </div>
     </form>
     <hr>
@@ -45,6 +45,7 @@
     <div>
         <label for="agama">Agama</label>
         <select name="Agama" id="Agama">
+            <option selected>-Pilih-</option>
             <option value="islam">Islam</option>
             <option value="kristen">Kristen</option>
             <option value="katolik">Katolik</option>
@@ -52,8 +53,28 @@
             <option value="hindu">Hindu</option>
         </select>
     </div>
+    <div>
+        <label for="term">Data sudah sesuai</label>
+        <input type="checkbox" name="term" id="term" value="ya">
+    </div>
+    <div>
+        <p><label for="Catatan">Catatan</label></p>
+        <textarea name="Catatan" id="Catatan" cols="30" rows="10"></textarea>
+    </div>
     <button type="submit">Kirim</button>
     </form>
-
+    <hr>
+    <h1>Validasi</h1>
+    <form action="valid">
+        <div>
+        <!-- <input type="text" required> contoh tanpa minimal atau maxmimal karakter  -->
+         <input type="text" name = "input" id="input" required minlength="3" maxlength="10"> 
+         <!-- minlength adalah perintah minimal karakter yang harus diisi sedangkan maxlength 
+          adalah perintah maksimal karakter yang harus diisi -->
+          <input type="number" name="nomer" id="nomer" min="1" max="10">
+          <!-- <input type="number" name="nomer" id="nomer" min="1" max="10"> format seperti ini digunakan untuk nomer -->
+          <button type="submit">Setuju</button>
+        </div>
+    </form>
 </body>
 </html>
